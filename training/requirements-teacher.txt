@@ -1,0 +1,7 @@
+torch>=2.3
+torchvision>=0.18
+numpy>=1.26
+pillow>=10.0
+tqdm>=4.66
+opencv-python>=4.9
+git+https://github.com/FacePerceiver/facer.git@main

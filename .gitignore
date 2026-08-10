@@ -1,0 +1,28 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+
+# CocoaPods generated output
+Pods/
+
+# Local Python environments and caches
+.venv-*/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Training data, checkpoints and local experiments
+training/inputs/
+training/outputs/
+training/datasets/
+tmp/
+build.log
+
+# Generated business materials are kept locally unless explicitly shared
+output/
+
+# Large third-party source trees used only for local annotation/training
+third_party/

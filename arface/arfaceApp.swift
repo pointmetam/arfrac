@@ -11,7 +11,7 @@ import SwiftUI
 struct arfaceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }

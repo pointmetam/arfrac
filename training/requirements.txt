@@ -1,0 +1,5 @@
+torch>=2.3
+numpy>=1.26
+pillow>=10.0
+tqdm>=4.66
+coremltools>=8.0

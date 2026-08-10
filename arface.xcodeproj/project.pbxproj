@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		76D8D337BB88B591B033018D /* Pods_arface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A5F100A55606DA1EF99062 /* Pods_arface.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9B93400F2FBE940700802B08 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DA9012E83F744C80F1D5095 /* Pods-arface.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arface.debug.xcconfig"; path = "Target Support Files/Pods-arface/Pods-arface.debug.xcconfig"; sourceTree = "<group>"; };
+		99A5F100A55606DA1EF99062 /* Pods_arface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_arface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9340012FBE940500802B08 /* arface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B93400E2FBE940700802B08 /* arfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9340182FBE940700802B08 /* arfaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arfaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E792C81E123C68553362269C /* Pods-arface.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arface.release.xcconfig"; path = "Target Support Files/Pods-arface/Pods-arface.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D8D337BB88B591B033018D /* Pods_arface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C92FC7CE2F202141B1FBA67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DA9012E83F744C80F1D5095 /* Pods-arface.debug.xcconfig */,
+				E792C81E123C68553362269C /* Pods-arface.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9B933FF82FBE940500802B08 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +96,8 @@
 				9B9340112FBE940700802B08 /* arfaceTests */,
 				9B93401B2FBE940700802B08 /* arfaceUITests */,
 				9B9340022FBE940500802B08 /* Products */,
+				6C92FC7CE2F202141B1FBA67 /* Pods */,
+				DE7D2EF4BC0D2C58932B5B46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +111,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DE7D2EF4BC0D2C58932B5B46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99A5F100A55606DA1EF99062 /* Pods_arface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +126,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B9340222FBE940700802B08 /* Build configuration list for PBXNativeTarget "arface" */;
 			buildPhases = (
+				0AB554C4ABD6B2DD548484B7 /* [CP] Check Pods Manifest.lock */,
 				9B933FFD2FBE940500802B08 /* Sources */,
 				9B933FFE2FBE940500802B08 /* Frameworks */,
 				9B933FFF2FBE940500802B08 /* Resources */,
@@ -111,8 +139,6 @@
 				9B9340032FBE940500802B08 /* arface */,
 			);
 			name = arface;
-			packageProductDependencies = (
-			);
 			productName = arface;
 			productReference = 9B9340012FBE940500802B08 /* arface.app */;
 			productType = "com.apple.product-type.application";
@@ -134,8 +160,6 @@
 				9B9340112FBE940700802B08 /* arfaceTests */,
 			);
 			name = arfaceTests;
-			packageProductDependencies = (
-			);
 			productName = arfaceTests;
 			productReference = 9B93400E2FBE940700802B08 /* arfaceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +181,6 @@
 				9B93401B2FBE940700802B08 /* arfaceUITests */,
 			);
 			name = arfaceUITests;
-			packageProductDependencies = (
-			);
 			productName = arfaceUITests;
 			productReference = 9B9340182FBE940700802B08 /* arfaceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +252,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AB554C4ABD6B2DD548484B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-arface-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B933FFD2FBE940500802B08 /* Sources */ = {
@@ -322,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -380,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -392,14 +439,18 @@
 		};
 		9B9340232FBE940700802B08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA9012E83F744C80F1D5095 /* Pods-arface.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7X9N2SFRC5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use the front camera for AR makeup try-on.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save AR makeup photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -418,20 +469,24 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9B9340242FBE940700802B08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E792C81E123C68553362269C /* Pods-arface.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7X9N2SFRC5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use the front camera for AR makeup try-on.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save AR makeup photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,7 +505,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -462,7 +517,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7X9N2SFRC5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leyi.arfaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,7 +539,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7X9N2SFRC5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leyi.arfaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,39 @@
+{
+  "app_labels": {
+    "0": "background",
+    "1": "skin",
+    "2": "eyebrow",
+    "3": "eye",
+    "4": "nose",
+    "5": "upper_lip",
+    "6": "lower_lip",
+    "7": "inner_mouth",
+    "8": "hair"
+  },
+  "lapa_labels": {
+    "0": "background",
+    "1": "skin",
+    "2": "left_eyebrow",
+    "3": "right_eyebrow",
+    "4": "left_eye",
+    "5": "right_eye",
+    "6": "nose",
+    "7": "upper_lip",
+    "8": "inner_mouth",
+    "9": "lower_lip",
+    "10": "hair"
+  },
+  "lapa_to_app": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 2,
+    "4": 3,
+    "5": 3,
+    "6": 4,
+    "7": 5,
+    "8": 7,
+    "9": 6,
+    "10": 8
+  }
+}
